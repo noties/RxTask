@@ -1,0 +1,7 @@
+apply plugin: 'java'
+apply from: '../gradle_maven_jar_publish.gradle'
+
+dependencies {
+    compile 'io.reactivex:rxjava:1.0.14'
+    testCompile 'junit:junit:4.12'
+}
