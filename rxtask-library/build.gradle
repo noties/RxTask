@@ -1,14 +1,13 @@
 apply plugin: 'java'
 
-// for ublishing only
-//apply from: '../gradle_maven_jar_publish.gradle'
+apply from: '../gradle_maven_jar_publish.gradle'
 
 dependencies {
     compile 'io.reactivex:rxjava:1.0.14'
     testCompile 'junit:junit:4.12'
 }
 
-//afterEvaluate {
-//    javadocs.failOnError false
-//    javadocs.classpath += project.sourceSets.main.allJava
-//}
+afterEvaluate {
+    javadocs.failOnError false
+    javadocs.classpath += project.sourceSets.main.allJava
+}
